@@ -1,6 +1,7 @@
 # BM25 Gets Its Revenge: companion experiment
 
-Small retrieval experiment for the article [*BM25 Gets Its Revenge*](https://github.com/CagatayAkcam/bm25-revenge).
+Small retrieval experiment for the article
+[*Before Another RAG Hop, Try Compiling the Query for BM25*](https://medium.com/@cagatay.akcamm/before-another-rag-hop-try-compiling-the-query-for-bm25-9652b5f4cee6).
 Rebuilds **one slice** of Meta's [SIRA](https://arxiv.org/abs/2605.06647) pipeline:
 query-side vocabulary prediction, document-frequency filtering, and weighted BM25.
 
