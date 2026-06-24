@@ -1,0 +1,242 @@
+{
+  "hand_authored": {
+    "MRR": 1.0,
+    "Recall@1": 1.0,
+    "Recall@3": 1.0
+  },
+  "llm_generated": {
+    "MRR": 0.9222222222222222,
+    "Recall@1": 0.9166666666666666,
+    "Recall@3": 0.9166666666666666
+  },
+  "per_query": [
+    {
+      "id": "q1-error-code",
+      "hand_rank": 1,
+      "llm_rank": 1,
+      "llm_candidates": [
+        "ERR-4032",
+        "payment failed",
+        "error code",
+        "transaction",
+        "declined",
+        "payment processing",
+        "troubleshoot",
+        "resolve",
+        "retry",
+        "billing",
+        "ERR-4032 error",
+        "payment method"
+      ]
+    },
+    {
+      "id": "q2-webhook-key",
+      "hand_rank": 1,
+      "llm_rank": 1,
+      "llm_candidates": [
+        "rotate",
+        "signing key",
+        "webhook",
+        "secret",
+        "HMAC",
+        "regenerate",
+        "invalidate",
+        "previous secret",
+        "rolling",
+        "signature verification",
+        "endpoint",
+        "update secret"
+      ]
+    },
+    {
+      "id": "q3-slow-app",
+      "hand_rank": 1,
+      "llm_rank": 15,
+      "llm_candidates": [
+        "slow",
+        "performance",
+        "laggy",
+        "update",
+        "after update",
+        "sluggish",
+        "freeze",
+        "responsive",
+        "degraded",
+        "regression",
+        "latest version",
+        "speed"
+      ]
+    },
+    {
+      "id": "q4-pod-restart",
+      "hand_rank": 1,
+      "llm_rank": 1,
+      "llm_candidates": [
+        "OOMKilled",
+        "CrashLoopBackOff",
+        "restartCount",
+        "liveness probe",
+        "backoff",
+        "exit code",
+        "kubectl describe pod",
+        "memory limit",
+        "readinessProbe",
+        "container logs",
+        "kubectl get pods",
+        "imagePullBackOff"
+      ]
+    },
+    {
+      "id": "q5-data-deletion",
+      "hand_rank": 1,
+      "llm_rank": 1,
+      "llm_candidates": [
+        "personal data",
+        "deletion request",
+        "right to erasure",
+        "GDPR",
+        "data subject",
+        "erase personal data",
+        "right to be forgotten",
+        "request erasure",
+        "without undue delay",
+        "controller",
+        "legitimate grounds",
+        "restrict processing"
+      ]
+    },
+    {
+      "id": "q6-pg-upgrade",
+      "hand_rank": 1,
+      "llm_rank": 1,
+      "llm_candidates": [
+        "zero downtime",
+        "pg_upgrade",
+        "logical replication",
+        "major version upgrade",
+        "PostgreSQL",
+        "replication slot",
+        "switchover",
+        "pglogical",
+        "standby",
+        "cutover",
+        "blue-green",
+        "WAL"
+      ]
+    },
+    {
+      "id": "q7-sso-plan",
+      "hand_rank": 1,
+      "llm_rank": 1,
+      "llm_candidates": [
+        "SSO",
+        "single sign-on",
+        "plan",
+        "includes",
+        "enterprise",
+        "pricing",
+        "tier",
+        "feature",
+        "authentication",
+        "upgrade"
+      ]
+    },
+    {
+      "id": "q8-version",
+      "hand_rank": 1,
+      "llm_rank": 1,
+      "llm_candidates": [
+        "v2.14.0",
+        "changelog",
+        "release notes",
+        "added",
+        "fixed",
+        "changed",
+        "deprecated",
+        "removed",
+        "new feature",
+        "improvement",
+        "bug fix",
+        "upgrade"
+      ]
+    },
+    {
+      "id": "q9-2fa-reset",
+      "hand_rank": 1,
+      "llm_rank": 1,
+      "llm_candidates": [
+        "two-factor authentication",
+        "reset",
+        "locked out",
+        "disable 2FA",
+        "user account",
+        "authenticator",
+        "recovery codes",
+        "admin",
+        "TOTP",
+        "bypass",
+        "security settings",
+        "re-enable"
+      ]
+    },
+    {
+      "id": "q10-redis-timeout",
+      "hand_rank": 1,
+      "llm_rank": 1,
+      "llm_candidates": [
+        "redis",
+        "timeout",
+        "connection",
+        "worker",
+        "redis connection timeout",
+        "connect",
+        "socket",
+        "retry",
+        "broker",
+        "celery",
+        "REDIS_URL",
+        "connection refused"
+      ]
+    },
+    {
+      "id": "q11-vat",
+      "hand_rank": 1,
+      "llm_rank": 1,
+      "llm_candidates": [
+        "VAT",
+        "Germany",
+        "tax rate",
+        "invoice",
+        "customer",
+        "wrong",
+        "incorrect",
+        "DE",
+        "%",
+        "tax calculation",
+        "billing address",
+        "locale"
+      ]
+    },
+    {
+      "id": "q12-terraform",
+      "hand_rank": 1,
+      "llm_rank": 1,
+      "llm_candidates": [
+        "terraform apply",
+        "stuck",
+        "hanging",
+        "timeout",
+        "deployment",
+        "terraform state",
+        "lock",
+        "state file",
+        "plan",
+        "apply stuck",
+        "infrastructure",
+        "terraform init",
+        "tfstate",
+        "deadlock"
+      ]
+    }
+  ]
+}

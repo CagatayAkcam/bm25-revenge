@@ -1,0 +1,235 @@
+{
+  "generated_at": "2026-06-24T08:10:13.132631+00:00",
+  "model": "claude-sonnet-4-6",
+  "prompt": "You are helping a lexical (BM25) search engine. For the user query below, list 8-12 single words or short phrases likely to appear verbatim in the one document that answers it. Prefer specific, discriminative vocabulary (error codes, exact feature names, domain terms) over generic synonyms. Return one term per line.\n\nQuery: {query}",
+  "queries": [
+    {
+      "id": "q1-error-code",
+      "query": "payment failed with error ERR-4032",
+      "candidates": [
+        "ERR-4032",
+        "payment failed",
+        "error code",
+        "transaction",
+        "declined",
+        "payment processing",
+        "troubleshoot",
+        "resolve",
+        "retry",
+        "billing",
+        "ERR-4032 error",
+        "payment method"
+      ],
+      "raw_response": "ERR-4032\npayment failed\nerror code\ntransaction\ndeclined\npayment processing\ntroubleshoot\nresolve\nretry\nbilling\nERR-4032 error\npayment method"
+    },
+    {
+      "id": "q2-webhook-key",
+      "query": "how do I rotate the signing key for webhooks",
+      "candidates": [
+        "rotate",
+        "signing key",
+        "webhook",
+        "secret",
+        "HMAC",
+        "regenerate",
+        "invalidate",
+        "previous secret",
+        "rolling",
+        "signature verification",
+        "endpoint",
+        "update secret"
+      ],
+      "raw_response": "rotate\nsigning key\nwebhook\nsecret\nHMAC\nregenerate\ninvalidate\nprevious secret\nrolling\nsignature verification\nendpoint\nupdate secret"
+    },
+    {
+      "id": "q3-slow-app",
+      "query": "app is really slow after the last update",
+      "candidates": [
+        "slow",
+        "performance",
+        "laggy",
+        "update",
+        "after update",
+        "sluggish",
+        "freeze",
+        "responsive",
+        "degraded",
+        "regression",
+        "latest version",
+        "speed"
+      ],
+      "raw_response": "slow\nperformance\nlaggy\nupdate\nafter update\nsluggish\nfreeze\nresponsive\ndegraded\nregression\nlatest version\nspeed"
+    },
+    {
+      "id": "q4-pod-restart",
+      "query": "pod keeps restarting in production",
+      "candidates": [
+        "OOMKilled",
+        "CrashLoopBackOff",
+        "restartCount",
+        "liveness probe",
+        "backoff",
+        "exit code",
+        "kubectl describe pod",
+        "memory limit",
+        "readinessProbe",
+        "container logs",
+        "kubectl get pods",
+        "imagePullBackOff"
+      ],
+      "raw_response": "OOMKilled\nCrashLoopBackOff\nrestartCount\nliveness probe\nbackoff\nexit code\nkubectl describe pod\nmemory limit\nreadinessProbe\ncontainer logs\nkubectl get pods\nimagePullBackOff"
+    },
+    {
+      "id": "q5-data-deletion",
+      "query": "customer wants their data deleted",
+      "candidates": [
+        "personal data",
+        "deletion request",
+        "right to erasure",
+        "GDPR",
+        "data subject",
+        "erase personal data",
+        "right to be forgotten",
+        "request erasure",
+        "without undue delay",
+        "controller",
+        "legitimate grounds",
+        "restrict processing"
+      ],
+      "raw_response": "personal data\ndeletion request\nright to erasure\nGDPR\ndata subject\nerase personal data\nright to be forgotten\nrequest erasure\nwithout undue delay\ncontroller\nlegitimate grounds\nrestrict processing"
+    },
+    {
+      "id": "q6-pg-upgrade",
+      "query": "upgrade postgres major version without downtime",
+      "candidates": [
+        "zero downtime",
+        "pg_upgrade",
+        "logical replication",
+        "major version upgrade",
+        "PostgreSQL",
+        "replication slot",
+        "switchover",
+        "pglogical",
+        "standby",
+        "cutover",
+        "blue-green",
+        "WAL"
+      ],
+      "raw_response": "zero downtime\npg_upgrade\nlogical replication\nmajor version upgrade\nPostgreSQL\nreplication slot\nswitchover\npglogical\nstandby\ncutover\nblue-green\nWAL"
+    },
+    {
+      "id": "q7-sso-plan",
+      "query": "which plan includes SSO",
+      "candidates": [
+        "SSO",
+        "single sign-on",
+        "plan",
+        "includes",
+        "enterprise",
+        "pricing",
+        "tier",
+        "feature",
+        "authentication",
+        "upgrade"
+      ],
+      "raw_response": "SSO\nsingle sign-on\nplan\nincludes\nenterprise\npricing\ntier\nfeature\nauthentication\nupgrade"
+    },
+    {
+      "id": "q8-version",
+      "query": "what changed in v2.14.0",
+      "candidates": [
+        "v2.14.0",
+        "changelog",
+        "release notes",
+        "added",
+        "fixed",
+        "changed",
+        "deprecated",
+        "removed",
+        "new feature",
+        "improvement",
+        "bug fix",
+        "upgrade"
+      ],
+      "raw_response": "v2.14.0\nchangelog\nrelease notes\nadded\nfixed\nchanged\ndeprecated\nremoved\nnew feature\nimprovement\nbug fix\nupgrade"
+    },
+    {
+      "id": "q9-2fa-reset",
+      "query": "reset 2FA for a locked out user",
+      "candidates": [
+        "two-factor authentication",
+        "reset",
+        "locked out",
+        "disable 2FA",
+        "user account",
+        "authenticator",
+        "recovery codes",
+        "admin",
+        "TOTP",
+        "bypass",
+        "security settings",
+        "re-enable"
+      ],
+      "raw_response": "two-factor authentication\nreset\nlocked out\ndisable 2FA\nuser account\nauthenticator\nrecovery codes\nadmin\nTOTP\nbypass\nsecurity settings\nre-enable"
+    },
+    {
+      "id": "q10-redis-timeout",
+      "query": "timeout connecting to redis from the worker",
+      "candidates": [
+        "redis",
+        "timeout",
+        "connection",
+        "worker",
+        "redis connection timeout",
+        "connect",
+        "socket",
+        "retry",
+        "broker",
+        "celery",
+        "REDIS_URL",
+        "connection refused"
+      ],
+      "raw_response": "redis\ntimeout\nconnection\nworker\nredis connection timeout\nconnect\nsocket\nretry\nbroker\ncelery\nREDIS_URL\nconnection refused"
+    },
+    {
+      "id": "q11-vat",
+      "query": "invoice shows wrong VAT for German customers",
+      "candidates": [
+        "VAT",
+        "Germany",
+        "tax rate",
+        "invoice",
+        "customer",
+        "wrong",
+        "incorrect",
+        "DE",
+        "%",
+        "tax calculation",
+        "billing address",
+        "locale"
+      ],
+      "raw_response": "VAT\nGermany\ntax rate\ninvoice\ncustomer\nwrong\nincorrect\nDE\n19%\ntax calculation\nbilling address\nlocale"
+    },
+    {
+      "id": "q12-terraform",
+      "query": "deploy is stuck at terraform apply",
+      "candidates": [
+        "terraform apply",
+        "stuck",
+        "hanging",
+        "timeout",
+        "deployment",
+        "terraform state",
+        "lock",
+        "state file",
+        "plan",
+        "apply stuck",
+        "infrastructure",
+        "terraform init",
+        "tfstate",
+        "deadlock"
+      ],
+      "raw_response": "terraform apply\nstuck\nhanging\ntimeout\ndeployment\nterraform state\nlock\nstate file\nplan\napply stuck\ninfrastructure\nterraform init\n.tfstate\ndeadlock"
+    }
+  ]
+}

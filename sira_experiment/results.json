@@ -1,0 +1,187 @@
+{
+  "per_query": [
+    {
+      "id": "q1-error-code",
+      "query": "payment failed with error ERR-4032",
+      "kind": "exact identifier",
+      "gold": "pay-err-4032",
+      "ranks": {
+        "BM25": 1,
+        "Dense (MiniLM)": 2,
+        "Naive expansion": 1,
+        "Corpus-aware expansion": 1,
+        "Hybrid (RRF)": 1
+      }
+    },
+    {
+      "id": "q2-webhook-key",
+      "query": "how do I rotate the signing key for webhooks",
+      "kind": "lexical-friendly",
+      "gold": "webhook-rotate",
+      "ranks": {
+        "BM25": 1,
+        "Dense (MiniLM)": 1,
+        "Naive expansion": 2,
+        "Corpus-aware expansion": 1,
+        "Hybrid (RRF)": 1
+      }
+    },
+    {
+      "id": "q3-slow-app",
+      "query": "app is really slow after the last update",
+      "kind": "vocabulary mismatch",
+      "gold": "perf-regression",
+      "ranks": {
+        "BM25": 14,
+        "Dense (MiniLM)": 1,
+        "Naive expansion": 2,
+        "Corpus-aware expansion": 1,
+        "Hybrid (RRF)": 3
+      }
+    },
+    {
+      "id": "q4-pod-restart",
+      "query": "pod keeps restarting in production",
+      "kind": "vocabulary mismatch",
+      "gold": "crashloop",
+      "ranks": {
+        "BM25": 2,
+        "Dense (MiniLM)": 1,
+        "Naive expansion": 1,
+        "Corpus-aware expansion": 1,
+        "Hybrid (RRF)": 1
+      }
+    },
+    {
+      "id": "q5-data-deletion",
+      "query": "customer wants their data deleted",
+      "kind": "vocabulary mismatch",
+      "gold": "gdpr-erasure",
+      "ranks": {
+        "BM25": 1,
+        "Dense (MiniLM)": 1,
+        "Naive expansion": 3,
+        "Corpus-aware expansion": 1,
+        "Hybrid (RRF)": 1
+      }
+    },
+    {
+      "id": "q6-pg-upgrade",
+      "query": "upgrade postgres major version without downtime",
+      "kind": "lexical-friendly",
+      "gold": "pg-upgrade",
+      "ranks": {
+        "BM25": 1,
+        "Dense (MiniLM)": 1,
+        "Naive expansion": 1,
+        "Corpus-aware expansion": 1,
+        "Hybrid (RRF)": 1
+      }
+    },
+    {
+      "id": "q7-sso-plan",
+      "query": "which plan includes SSO",
+      "kind": "vocabulary mismatch",
+      "gold": "pricing-tiers",
+      "ranks": {
+        "BM25": 1,
+        "Dense (MiniLM)": 1,
+        "Naive expansion": 1,
+        "Corpus-aware expansion": 1,
+        "Hybrid (RRF)": 1
+      }
+    },
+    {
+      "id": "q8-version",
+      "query": "what changed in v2.14.0",
+      "kind": "exact identifier",
+      "gold": "changelog-2-14",
+      "ranks": {
+        "BM25": 1,
+        "Dense (MiniLM)": 2,
+        "Naive expansion": 1,
+        "Corpus-aware expansion": 1,
+        "Hybrid (RRF)": 1
+      }
+    },
+    {
+      "id": "q9-2fa-reset",
+      "query": "reset 2FA for a locked out user",
+      "kind": "expansion trap",
+      "gold": "twofa-reset",
+      "ranks": {
+        "BM25": 2,
+        "Dense (MiniLM)": 1,
+        "Naive expansion": 4,
+        "Corpus-aware expansion": 1,
+        "Hybrid (RRF)": 1
+      }
+    },
+    {
+      "id": "q10-redis-timeout",
+      "query": "timeout connecting to redis from the worker",
+      "kind": "lexical-friendly",
+      "gold": "redis-pool",
+      "ranks": {
+        "BM25": 1,
+        "Dense (MiniLM)": 1,
+        "Naive expansion": 1,
+        "Corpus-aware expansion": 1,
+        "Hybrid (RRF)": 1
+      }
+    },
+    {
+      "id": "q11-vat",
+      "query": "invoice shows wrong VAT for German customers",
+      "kind": "exact identifier",
+      "gold": "vat-germany",
+      "ranks": {
+        "BM25": 1,
+        "Dense (MiniLM)": 1,
+        "Naive expansion": 1,
+        "Corpus-aware expansion": 1,
+        "Hybrid (RRF)": 1
+      }
+    },
+    {
+      "id": "q12-terraform",
+      "query": "deploy is stuck at terraform apply",
+      "kind": "vocabulary mismatch",
+      "gold": "terraform-lock",
+      "ranks": {
+        "BM25": 1,
+        "Dense (MiniLM)": 1,
+        "Naive expansion": 1,
+        "Corpus-aware expansion": 1,
+        "Hybrid (RRF)": 1
+      }
+    }
+  ],
+  "summary": {
+    "BM25": {
+      "MRR": 0.8392857142857143,
+      "Recall@1": 0.75,
+      "Recall@3": 0.9166666666666666
+    },
+    "Dense (MiniLM)": {
+      "MRR": 0.9166666666666666,
+      "Recall@1": 0.8333333333333334,
+      "Recall@3": 1.0
+    },
+    "Naive expansion": {
+      "MRR": 0.798611111111111,
+      "Recall@1": 0.6666666666666666,
+      "Recall@3": 0.9166666666666666
+    },
+    "Corpus-aware expansion": {
+      "MRR": 1.0,
+      "Recall@1": 1.0,
+      "Recall@3": 1.0
+    },
+    "Hybrid (RRF)": {
+      "MRR": 0.9444444444444443,
+      "Recall@1": 0.9166666666666666,
+      "Recall@3": 1.0
+    }
+  }
+}
